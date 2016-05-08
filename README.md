@@ -54,6 +54,8 @@ You're an informed Front End web developer. You know to avoid watchers and filte
 
 Angular Functional Scope allows you to define scope properties as **definition** functions that return the value of the property. **Definitions** are similar in intent, although different in mechanism, to **watchers**. Watchers say, "when this scope value changes, run this code." Definitions say, "this function will return the correct value of this property at any time." And every time the scope is updated via `$update`, the definitions are re-run.
 
+When `$update` is called on a scope, all child scope definitions are re-run, ensuring that any definitions based on inherited scope properties are updated.
+
 See below for more examples.
 
 ## Best Practices
