@@ -1,19 +1,21 @@
-# angular-functional-scope
+# angular-dry-scope
 
 Bringing functional UI paradigms to Angular 1.
+
+Angular Dry Scope helps scope-management code [DRY](http://c2.com/cgi/wiki?DontRepeatYourself) by allowing you to define the value of a scope property in one place, instead of updating it in disjointed parts of the code.
 
 ## Installation
 
 Install using NPM:
 
 ```
-npm install angular-functional-scope --save
+npm install angular-dry-scope --save
 ```
 
 Then import it as a module in your Angular app:
 
 ```js
-angular.module('MyApp', ['functional-scope'])
+angular.module('MyApp', ['dry-scope'])
 ```
 
 ## Usage
@@ -52,7 +54,7 @@ And `$scope.totalCost` will automatically be updated!
 
 You're an informed Front End web developer. You know to avoid watchers and filters in Angular 1 because they cause performance problems. But you also know that functional programming paradigms (defining your app state using a function instead of "manually" modifying it) are very powerful and allow you to write applications that are easier to read, maintain, and change.
 
-Angular Functional Scope allows you to define scope properties as **definition** functions that return the value of the property. **Definitions** are similar in intent, although different in mechanism, to **watchers**. Watchers say, "when this scope value changes, run this code." Definitions say, "this function will return the correct value of this property at any time." And every time the scope is updated via `$update`, the definitions are re-run.
+Angular Dry Scope allows you to define scope properties as **definition** functions that return the value of the property. **Definitions** are similar in intent, although different in mechanism, to **watchers**. Watchers say, "when this scope value changes, run this code." Definitions say, "this function will return the correct value of this property at any time." And every time the scope is updated via `$update`, the definitions are re-run.
 
 When `$update` is called on a scope, all child scope definitions are re-run, ensuring that any definitions based on inherited scope properties are updated.
 

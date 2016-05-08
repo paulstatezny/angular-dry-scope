@@ -1,14 +1,14 @@
 {
-  "name": "angular-functional-scope",
+  "name": "angular-dry-scope",
   "version": "1.0.0",
   "description": "Bringing functional UI paradigms to Angular 1",
-  "main": "./lib/functional-scope.js",
+  "main": "./lib/dry-scope.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paulstatezny/angular-functional-scope.git"
+    "url": "git+https://github.com/paulstatezny/angular-dry-scope.git"
   },
   "keywords": [
     "Angular",
@@ -17,7 +17,7 @@
   "author": "Paul Statezny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paulstatezny/angular-functional-scope/issues"
+    "url": "https://github.com/paulstatezny/angular-dry-scope/issues"
   },
-  "homepage": "https://github.com/paulstatezny/angular-functional-scope#readme"
+  "homepage": "https://github.com/paulstatezny/angular-dry-scope#readme"
 }
