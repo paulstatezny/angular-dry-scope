@@ -2,7 +2,7 @@
 
 Bringing functional UI paradigms to Angular 1.
 
-Angular Dry Scope helps scope-management code [DRY](http://c2.com/cgi/wiki?DontRepeatYourself) by allowing you to define the value of a scope property in one place, instead of updating it in disjointed parts of the code.
+Angular Dry Scope helps keep scope-management code [DRY](http://c2.com/cgi/wiki?DontRepeatYourself) by allowing you to define the value of a scope property in one place, instead of updating it in disjointed parts of the code.
 
 ## Installation
 
@@ -48,7 +48,7 @@ $scope.$update({
 });
 ```
 
-And `$scope.totalCost` will automatically be updated!
+And `$scope.totalCost` will automatically be updated.
 
 ## The Vision
 
@@ -58,12 +58,18 @@ Angular Dry Scope allows you to define scope properties as **definition** functi
 
 When `$update` is called on a scope, all child scope definitions are re-run, ensuring that any definitions based on inherited scope properties are updated.
 
-See below for more examples.
-
 ## Best Practices
 
 1. If you `$define` a scope property, don't ever set it manually.
 2. Within a component (directive/controller) that uses `$define`, always use `$update` to set scope properties.
+
+## Reporting Problems
+
+Feedback is always welcome! Please open up a GitHub issue if you find a problem or have a comment.
+
+## Contributing
+
+Pull requests are welcome! I'll generally respond within a couple days. When the project needs more formal contribution documentation, I'll add it.
 
 ## Purpose and Attribution
 
