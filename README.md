@@ -75,4 +75,4 @@ Feature requests are welcome, too. I'm specifically interested in expanding the 
 
 ## Purpose and Attribution
 
-This module is an experiment to examine the use of newer functional UI approaches in Angular 1. It was inspired by the state/props model of React.js. `$update` was shamelessly based on React's `setState`. Special thanks to [@duhduhdan](https://github.com/duhduhdan) and [Tyler Kayser](https://twitter.com/@TylerKayser) for discussions and ideas that led to this project.
+This module is an experiment to examine the use of newer functional UI approaches in Angular 1. It was inspired by the state/props model of React.js. `$update` was shamelessly based on React's `setState`. Special thanks to [@duhduhdan](https://github.com/duhduhdan) and [Tyler Kayser](https://github.com/tylerkayser) for discussions and ideas that led to this project.
